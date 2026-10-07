@@ -1,8 +1,93 @@
-body { font-family: Arial; background: #667eea; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; }
-.card { background: white; padding: 30px; border-radius: 15px; width: 320px; text-align: center; }
-input { padding: 10px; width: 65%; border: 1px solid #ccc; border-radius: 5px; }
-button { padding: 10px 12px; background: #28a745; color: white; border: none; border-radius: 5px; cursor: pointer; }
-ul { list-style: none; padding: 0; text-align: left; margin-top: 20px; }
-li { padding: 10px; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; }
-.done { text-decoration: line-through; color: gray; }
-.delete-btn { background: red; padding: 3px 8px; font-size: 12px; }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  background: white;
+  width: 100%;
+  max-width: 400px;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.input-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #667eea;
+}
+
+button {
+  padding: 12px 18px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #5563c1;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  background: #f4f4f4;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+li.done {
+  text-decoration: line-through;
+  color: gray;
+  background: #e0e0e0;
+}
+
+.delete-btn {
+  background: #ff4757;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
